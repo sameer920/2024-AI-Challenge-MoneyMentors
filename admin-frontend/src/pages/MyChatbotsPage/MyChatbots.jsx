@@ -15,7 +15,7 @@ export default function MyChatbots(props) {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch(serverBasePath + '/isAuthenticated', {
+        fetch(serverBasePath + '/auth/isAuthenticated', {
             method: "GET",
             headers: new Headers({
                 'content-type': 'application/json',

@@ -10,8 +10,6 @@ You must have nodejs and npm setup on your machine.
 ```
 
 DB_PATH=mongodb+srv://sameer920:SameerAccessBackend@cluster0.omrw2fl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-GOOGLE_CLIENT_ID=<Your Google OAUTH CLIENT ID>
-GOOGLE_CLIENT_SECRET=<<Your Google OAUTH CLIENT SECRET>
 CALLBACK_URL=http://localhost:2121/auth/login/user/google/redirect
 SECRET_STRING=EFMC234f4o3few!@e43-023-2044
 PINECONE_API_KEY=4763fdc8-c495-491a-9285-5e2841adcad0

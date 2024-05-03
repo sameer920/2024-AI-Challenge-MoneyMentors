@@ -76,16 +76,6 @@ router.post('/login/user', async (req, res, next) => {
 
 })
 
-router.get("/login/user/google",
-    passport.authenticate("google", { scope: ["profile", "email"] }));
-
-router.get("/login/user/google/redirect",
-    passport.authenticate("google",
-        {
-            successRedirect: process.env.SUCCESS_LOGIN_REDIRECT,
-            failureRedirect: process.env.FAILURE_LOGIN_REDIRECT,
-        })
-);
 
 // When logout, redirect to client
 router.get("/logout", (req, res) => {

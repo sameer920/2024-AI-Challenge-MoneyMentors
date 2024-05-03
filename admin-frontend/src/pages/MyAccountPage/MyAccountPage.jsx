@@ -34,7 +34,7 @@ export default function MyAccountPage(props) {
   ];
 
   function logoutUser() {
-    window.open(serverBasePath + "/logout", "_self");
+    window.open(serverBasePath + "/auth/logout", "_self");
   }
 
   function deleteUser() {

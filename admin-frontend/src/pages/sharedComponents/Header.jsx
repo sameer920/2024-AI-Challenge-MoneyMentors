@@ -17,7 +17,7 @@ function Header(props) {
                 <div>
                     <a href='' className="flex items-center">
                         <img src={logo} className="h-8 mr-3" alt="chatapp Logo" />
-                        <span className="self-center text-xl sm:text-2xl font-semibold whitespace-nowrap dark:text-white">Chat App</span>
+                        <span className="self-center text-xl h-8 w-fit sm:text-2xl font-semibold whitespace-nowrap dark:text-white">Finbuddy</span>
                     </a>
                 </div>
                 <div className="flex items-center justify-center md:order-2">
@@ -40,22 +40,8 @@ function Header(props) {
                     </button>
                 </div>
                 <div className={headerOpen ? "block w-full" : "hidden lg:flex items-center justify-between w-full lg:w-auto lg:order-1"} id="navbar-cta">
-                    <ul className="flex flex-col font-medium p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row lg:space-x-8 lg:mt-0 lg:border-0 lg:bg-white dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700">
-                        <li onClick={closeHeader}>
-                            <a href="#" className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded lg:bg-transparent lg:text-blue-700 lg:p-0 lg:dark:text-blue-500" aria-current="page">Demo</a>
-                        </li>
-                        <li onClick={closeHeader}>
-                            <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 lg:p-0 lg:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Affiliate</a>
-                        </li>
-                        <li onClick={closeHeader}>
-                            <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 lg:p-0 lg:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Pricing</a>
-                        </li>
-                        <li onClick={closeHeader}>
-                            <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 lg:p-0 lg:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">API</a>
-                        </li>
-                        <li onClick={closeHeader}>
-                            <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 lg:p-0 lg:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Guide</a>
-                        </li>
+                    {/* <ul className="flex flex-col font-medium p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row lg:space-x-8 lg:mt-0 lg:border-0 lg:bg-white dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700">
+                        
 
 
                         <li onClick={closeHeader}>
@@ -64,15 +50,7 @@ function Header(props) {
                             >My Chatbots
                             </Link>
                         </li>
-
-                        <li onClick={closeHeader}>
-                            <Link to={'/Access-Control'}
-                                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-blue-700 lg:p-0 lg:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-                            >
-                                Access Control
-                            </Link>
-                        </li>
-                    </ul>
+                    </ul> */}
                 </div>
             </div>
         </nav>

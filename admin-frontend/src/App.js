@@ -15,7 +15,6 @@ import NewChatbotNav from './pages/NewChatbot/components/NewChatbotNav';
 import AgencySignin from './pages/AgencySignin/AgencySignin'
 import QuestionAnswer from './pages/QuestionAnswerPage/QuestionAnswer';
 import MyAccountPage from './pages/MyAccountPage/MyAccountPage';
-import AgencyDashboard from './pages/AgencyDashboard/AgencyDashboard';
 import AgencyPageUser from './pages/AgencyPageUser/AgencyPageUser';
 
 function App() {
@@ -34,7 +33,6 @@ function App() {
           <Route path='test' element={<AgencyPageUser />} />
         </Route>
 
-        <Route path='Access-Control' element={<AgencyPageUser />} />
         <Route path='new/sources' element={<NewChatbotNav />}>
           <Route path='text/:id' element={<UploadText />} />
           <Route path='files/:id' element={<UploadFile />} />
@@ -42,10 +40,7 @@ function App() {
           <Route path='questionAnswers/:id' element={<QuestionAnswer />} />
         </Route>
 
-        <Route path='user'>
-          <Route path='Login' element={<AgencySignin />} />
-          <Route path='Dashboard' element={<AgencyDashboard />} />
-        </Route>
+        
 
         <Route path='/login' element={<Login />} />
         <Route path='/' element={<MyChatbots />} />

@@ -49,43 +49,6 @@ module.exports = function (app) {
     }
     ));
 
-    passport.use(new GoogleStrategy(
-        {
-            clientID: process.env.GOOGLE_CLIENT_ID,
-            clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-            callbackURL: process.env.CALLBACK_URL,
-        }, async function (accessToken, refreshToken, profile, cb) {
-            try {
-                const user = await User.findOne({ googleId: profile._json.sub },{chatBots: 0});
-                
-                // console.log(profile._json)
-                if (!user) {
-                    const newUser = new User({
-                        googleId: profile._json.sub,
-                        name: profile._json.name,
-                        givenName: profile._json.given_name,
-                        familyName: profile._json.family_name,
-                        picture: profile._json.picture,
-                        email: profile._json.email,
-                        emailVerified: profile._json.email_verified,
-                        locale: profile._json.locale,
-                        totalConversations: 30,
-                        usedConversations: 0,
-                        plan: 'free'
-                    })
-                    await newUser.save()
-                    return cb(null,  newUser);
-                }
-                else if (user) {
-                    return cb(null,  user);
-                }
-            }
-            catch (err) {
-                return cb(err);
-            }
-        }
-    ));
-
     passport.serializeUser(function (user, cb) {
         process.nextTick(function () {
             if (user instanceof User) {

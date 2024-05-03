@@ -1,0 +1,28 @@
+const chatbotDefaultConfig = {
+    name: 'Untitled',
+    credits: 30,
+    totalConversations: 0,
+    totalMessages: 0,
+    totalResolutions: 0,
+    conversationHistory: [],
+    totalChars: 0,
+    data: {files: []},
+    basePrompt: `I want you to act as a document that I am having a conversation with. Your name is "AI Assistant". You will provide me with answers from the given info. If the answer is not included, say exactly "I don't know." and stop after that. Refuse to answer any question not about the info. Never break character.`,
+    model: 'gpt-3.5-turbo',
+    temprature: 0.0,
+    publicAccess: true,
+    domains: [],
+    rateMessages: 10,
+    rateSeconds: 3,
+    initialMessage: 'Hello, how can I help you today?',
+    SuggestedMessages: [],
+    darkMode: false,
+    displayName: '',
+    userBubbleColor: '#3b82f6',
+    chatButtonColor: '#030712',
+    botBubbleColor: '#E7E5E4',
+    headerBarColor: '#3b82f6',
+    allowedChatbots: 1,
+}
+
+module.exports = chatbotDefaultConfig

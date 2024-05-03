@@ -1,0 +1,12 @@
+.main {
+    overflow-y: auto;
+    /* min-height: 65vh;
+    max-height: 80vh; */
+    height: 60vh
+}
+
+.message {
+    /* overflow-y: none; */
+    resize: none;
+    /* width: 23.5rem; */
+}

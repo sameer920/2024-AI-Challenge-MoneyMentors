@@ -1,0 +1,7 @@
+TODO
+**/node_modules
+**/clear.js
+**/index.js
+**/testGPTschema.js
+**/uploads
+*.env

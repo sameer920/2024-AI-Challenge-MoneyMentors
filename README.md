@@ -7,6 +7,8 @@ You must have nodejs and npm setup on your machine.
 2. Install the necessary packages using npm install
 3. Create an env file with the following fields:
 
+```
+
 DB_PATH=mongodb+srv://sameer920:SameerAccessBackend@cluster0.omrw2fl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
 GOOGLE_CLIENT_ID=<Your Google OAUTH CLIENT ID>
 GOOGLE_CLIENT_SECRET=<<Your Google OAUTH CLIENT SECRET>
@@ -21,6 +23,7 @@ PORT=2121
 COOKIE_SAME_SITE=""
 SERVER_ADDR=http://localhost:2121
 GOOGLE_GENAI_KEY=AIzaSyDc4wKrfOeWCWmUDMHG-sSuNLwgvhMcALk
+```
 
 4. Run the server using node index.js
 
@@ -30,4 +33,8 @@ GOOGLE_GENAI_KEY=AIzaSyDc4wKrfOeWCWmUDMHG-sSuNLwgvhMcALk
 
 1. Move to frontend Directory
 2. Install the necessary packages using npm install
-3. Run the frontend using npm run dev
+3. In this directory, create an env file with the following contents:
+
+VITE_APP_SERVERURL=http://localhost:2121
+
+4. Run the frontend using npm run dev
